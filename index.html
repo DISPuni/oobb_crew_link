@@ -7,123 +7,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:title" content="OOBB">
     <meta property="og:description" content="oobb crew">
-    <meta property="og:image" content="oobb_logo_.jpg">
+    <meta property="og:image" content="oobb_logo 페비콘.jpg">
     <title>OOBB crew</title>
     <style>
-        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+        @media (max-width: 420px) {
+            body {
+                background: linear-gradient(180deg, #F2D4FF 0%, #FFFFE2 100%);
+                height: 100%;
+            }
+            .profile {
+                width: 100px;
+                height: 100px;
+                margin-top: 5%;
 
-        * {
-            font-family: "Pretendard", serif;
+            }
         }
 
-        body {
-            background: linear-gradient(180deg, #F2D4FF 0%,  #FFFFE2 100%);
-            height: 100vh;
-          }
+        @media (min-width: 421px) {
 
-        .bigbutton {
-            width: 320px;
-            height: 59px;
-            border-radius: 8px;
-            background-color: white;
-            margin-bottom: 16px;
-            font-size: 14px;
-            font-weight: bold;
-            color:#333333;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            box-shadow: 0px 4px 16px rgba(232, 52, 78, 0.2);
+            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+            * {
+                font-family: "Pretendard", serif;
+            }
+
+            body {
+                background: linear-gradient(180deg, #F2D4FF 0%, #FFFFE2 100%);
+                height: 100vh;
+            }
+
+            .bigbutton {
+                width: 320px;
+                height: 59px;
+                border-radius: 8px;
+                background-color: white;
+                margin-bottom: 16px;
+                font-size: 14px;
+                font-weight: bold;
+                color: #333333;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                box-shadow: 0px 4px 16px rgba(232, 52, 78, 0.2);
+            }
+
+            .buttons>a {
+                width: 152px;
+                height: 59px;
+                border-radius: 8px;
+                font-size: 15px;
+                font-weight: 500;
+                color: #561C50;
+                ;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                box-shadow: 0px 4px 16px rgba(232, 52, 78, 0.2);
+                margin: 0px 8px 17px 8px;
+            }
+
+            .buttons>a>b {
+                color: #561C50;
+            }
+
+            .buttons {
+                display: flex;
+                color: #FFFFFF;
+            }
+
+            .wrap>a:hover {
+                font-size: 14px;
+                font-weight: bold;
+                color: #333333;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                box-shadow: 0px 4px 16px rgba(232, 52, 78, 0.2);
+            }
+
+
+            .profile {
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                background-image: url('oobb_logo 페비콘.png');
+                background-position: center;
+                background-size: cover;
+                margin-top: 10%;
+                margin-bottom: 0px;
+
+            }
+
+            .main {
+                color: #333333;
+                font-size: 22px;
+                size: 20px;
+                margin-top: 0px;
+                margin-bottom: 5px;
+            }
+
+            .sub {
+                color: #646464;
+                font-size: 14px;
+                font-weight: 500;
+                size: 14px;
+                margin-top: 0px;
+                margin-bottom: 66px;
+            }
+
+            .wrap {
+                width: 300px;
+                margin: 30px auto 0px auto;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .footer {
+                margin-top: 100px;
+                font-size: 12px;
+                color: #646464;
+            }
+
+            .half_hl {
+                display: inline;
+                background: linear-gradient(to top, #FFD199 30%, transparent 30%);
+            }
         }
-        .buttons > a {
-            width: 152px;
-            height: 59px;
-            border-radius: 8px;
-            font-size: 15px;
-            font-weight: 500;
-            color:#561C50;;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            box-shadow: 0px 4px 16px rgba(232, 52, 78, 0.2);
-            margin: 0px 8px 17px 8px;
-        }
-       
-        .buttons > a >b {
-            color: #561C50;
-        }
-
-        .buttons {
-            display: flex;
-            color: #FFFFFF;
-        }
-        .wrap > a:hover {
-            font-size: 14px;
-            font-weight: bold;
-            color:#333333;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-decoration: none;
-            box-shadow: 0px 4px 16px rgba(232, 52, 78, 0.2);
-        }
-
-
-        .profile {
-            width: 200px;
-            height: 200px;
-            border-radius: 100%;
-            background-image: url('oobb_logo 페비콘.png');
-            background-position: center;
-            background-size: cover;
-            margin-top: 10%;
-            margin-bottom: 0px;
-            
-        }
-
-        .main {
-            color: #333333;
-            font-size: 22px;
-            size: 20px;
-            margin-top: 0px;
-            margin-bottom: 5px;
-        }
-
-        .sub {
-            color: #646464;
-            font-size: 14px;
-            font-weight: 500;
-            size: 14px;
-            margin-top: 0px;
-            margin-bottom: 66px;
-        }
-
-        .wrap {
-            width: 300px;
-            margin: 30px auto 0px auto;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }     
-
-        .footer {
-            margin-top: 100px;
-            font-size: 12px;
-            color: #646464;
-        }
-
-        .half_hl {    
-            display: inline;    
-    background: linear-gradient(to top, #FFD199 30%, transparent 30%);
-   }
-
     </style>
 </head>
 
@@ -132,16 +150,18 @@
         <div class="profile"></div>
         <h1 class="main">OOBB</h1>
         <p class="sub">Design crew</p>
-        <a class="bigbutton"target="_blank" href="https://tumblbug.com/oobb_artbook_project/community/creator"><span class="half_hl">NEW!</span>&nbsp;&nbsp;편테일바 펀딩 프로젝트</a>
-        <a class="bigbutton"target="_blank" href="https://www.youtube.com/channel/UCxyjvZmRFokYxR_rxdvZBWA"><img src="youtube.png" width="5%"> 
+        <a class="bigbutton" target="_blank" href="https://tumblbug.com/oobb_artbook_project/community/creator"><span
+                class="half_hl">NEW!</span>&nbsp;&nbsp;편테일바 펀딩 프로젝트</a>
+        <a class="bigbutton" target="_blank" href="https://www.youtube.com/channel/UCxyjvZmRFokYxR_rxdvZBWA"><img
+                src="youtube.png" width="5%">
             &nbsp; youtube</a>
         <div class="buttons">
-        <a target="_blank" href="disppills.com">DISP</a>
-        <a target="_blank" href="https://xd.adobe.com/view/dfbd6085-a3d5-4f22-7aef-1a7084111adf-a98c/">Enekong</a>
+            <a target="_blank" href="disppills.com">DISP</a>
+            <a target="_blank" href="https://xd.adobe.com/view/dfbd6085-a3d5-4f22-7aef-1a7084111adf-a98c/">Enekong</a>
         </div>
         <div class="buttons">
-        <a target="_blank" href="https://mery9711.wixsite.com/my-site">MERY</a>
-        <a target="_blank" href="https://yjy1269.wixsite.com/portfolio">YANZI</a>
+            <a target="_blank" href="https://mery9711.wixsite.com/my-site">MERY</a>
+            <a target="_blank" href="https://yjy1269.wixsite.com/portfolio">YANZI</a>
         </div>
 
         <p class="footer">@oobb_crew</p>
@@ -149,4 +169,3 @@
 </body>
 
 </html>
-
